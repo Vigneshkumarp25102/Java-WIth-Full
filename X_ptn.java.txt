@@ -1,0 +1,17 @@
+class X_ptn{
+public static void main(String arg[]){
+String a="mam";
+for(int i=0;i<=a.length()-1;i++){
+for(int j=0;j<=a.length()-1;j++){
+if(i==j || i+j==a.length() - 1){
+System.out.print(a.charAt(i));
+}
+else{
+System.out.print(" ");
+}
+
+}
+System.out.println();
+}
+}
+}
