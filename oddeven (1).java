@@ -29,7 +29,7 @@ class Main {
     }
     }
     
-    System.out.print("Even numbers : ");
+    System.out.print("odd numbers : ");
     
     for(int m=0;m<arr_odd.size();m++){
     System.out.print(arr_odd.toArray()[m]+",");
@@ -37,7 +37,7 @@ class Main {
     
     System.out.println();
 
-    System.out.print("Ödd numbers : ");
+    System.out.print("Even numbers : ");
     
     for(int n=0;n<arr_eve.size();n++){
     System.out.print(arr_eve.toArray()[n]+",");
