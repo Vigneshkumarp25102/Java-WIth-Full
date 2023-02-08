@@ -1,4 +1,4 @@
-public class Train_RLTN001{
+class Train_RLTN001{
 
 	String train_no = "RLTN001";
 
