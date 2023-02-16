@@ -1,4 +1,3 @@
-
 class My_UserException extends Exception{
     public My_UserException(String userExceptiontThrow){
         super(userExceptiontThrow);
@@ -58,14 +57,24 @@ public class Exception_Task2 {
                             if(user.password(userGivenPassword)==true){
                                 System.out.println("Login Successfully");
                             }
+                            else {
+                                System.out.println("Something error");
+                            }
                             }catch (My_PasswordWrongException throwPasswordWrongException){
                                 System.out.println(throwPasswordWrongException.getMessage());
                             }
+                        }
+                        else {
+                            System.out.println("Something error");
                         }
                     }catch (My_PasswordRequiredException throwPasswordRequiredException){
                         System.out.println(throwPasswordRequiredException.getMessage());
                     }
 
+                }
+
+                else {
+                    System.out.println("Something error");
                 }
         }catch (My_UserException throwUserException){
             System.out.println(throwUserException.getMessage());
