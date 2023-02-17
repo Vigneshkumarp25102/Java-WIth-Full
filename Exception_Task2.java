@@ -20,7 +20,7 @@ class UserNamePassword{
         if(givenUsername=="" || givenUsername==null || givenUsername!=username){
             throw new My_UserException("Please enter the valid username");
         }else {
-            return true;
+            return username==givenUsername;
         }
     }
     public boolean passwordValidation(String givenpassword) throws My_PasswordRequiredException {
