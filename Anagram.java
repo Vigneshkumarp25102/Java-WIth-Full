@@ -22,6 +22,5 @@ public class Anagram {
     }
 }
 
-//                    strTwo.substring(strTwo.charAt(loopSecondStr),0);
 //                strTwo.replace(strTwo.charAt(loopSecondStr),' ');
 //                    strTwo.replace(strTwo.charAt(loopSecondStr),' ');
