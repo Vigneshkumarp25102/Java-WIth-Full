@@ -1,19 +1,27 @@
 public class Anagram {
     public static void main(String []arg){
-        String word_1="ABC";
-        String word_2="BAC";
-        short count=0;
-        if(word_1.length() == word_2.length()){
-        for (int check_1=0;check_1<word_1.length();check_1++){
-            for (int check_2=0;check_2<word_2.length();check_2++){
-                if(word_1.charAt(check_1)==word_2.charAt(check_2)){
-                    count++;
+    String strOne = "ABC";
+    String strTwo = "CAB";
+    char[] arrOne= strOne.toCharArray();
+    char[] arrTwo= strTwo.toCharArray();
+    int strCount=0;
+
+    if(strOne.length()==strTwo.length()) {
+        for (int loopFirstStr = 0; loopFirstStr < strOne.length(); loopFirstStr++) {
+            for (int loopSecondStr = 0; loopSecondStr < strTwo.length(); loopSecondStr++) {
+                if (arrOne[loopFirstStr] == arrTwo[loopSecondStr]) {
+                    strCount++;
+                    arrTwo[loopSecondStr]=0;
                 }
             }
-            }
-        }else System.out.println("This is not anagram");
-        if(count==word_1.length()){
-            System.out.println("This is a anagram");
-        }else System.out.println("This is not anagram");
+        }
+        if(strCount==strOne.length()) {
+            System.out.println("This is anagram");
+        }
+    }else System.out.println("This is not anagram");
     }
 }
+
+//                    strTwo.substring(strTwo.charAt(loopSecondStr),0);
+//                strTwo.replace(strTwo.charAt(loopSecondStr),' ');
+//                    strTwo.replace(strTwo.charAt(loopSecondStr),' ');
